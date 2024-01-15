@@ -1,0 +1,22 @@
+
+```{r Loading Packages} 
+library(tidyverse)
+library(ggrepel)
+library(nflreadr)
+library(nflplotR)
+
+options(scipen = 9999)
+```
+
+
+```{r Loading Data}
+data <- load_pbp(2022)
+```
+
+```{r data dimensions}
+dim(data)
+str(data[1:10])
+glimpse(data[1:10])
+view(data)
+```
+
